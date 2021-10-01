@@ -215,6 +215,8 @@ Note:
 2. For detecting loop use hale and tortoise method for efficient approach
 
 ---------------------------------------Binary Tree:(top to down use dfs recursive-> left,right)-------------------------------------
+Basic: Inorder traversal of BST gives sorted order also for verifying process
+
 1. same tree:  fun(p.left,q.left)&&fun(p.right,q.right);
 2. symmetric tree: fun(p.left,q.right)&&fun(p.right,q.left);
 3. max depth or height: 1+max(fun(root.left),fun(root.right));
