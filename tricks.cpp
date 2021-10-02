@@ -204,7 +204,10 @@ Note:
        else add odd values postions to get req ans; // get it by observing patterns
 
 6. when all nums are +ve use space approach for efficient
+7. Given two coins of denominations “X” and “Y” respectively, find the largest amount that cannot be obtained using these two coins (assuming infinite supply of coins) followed by the total number of such non obtainable amounts, if no such value exists print “NA”.
 
+      Largest amount A = (X * Y) - (X + Y)                 //sol works for only gcd 1  forbenius coin problem
+       Total amount = (X -1) * (Y - 1) /2 
 
 ---------------------------------------------------------Linked List----------------------------------------------------------------
 
