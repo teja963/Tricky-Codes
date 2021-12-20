@@ -1,3 +1,4 @@
+
 1.Sum of subsets of all the subsets of an array | O(N)-direct sum
   
    for(i=0;i<n;i++)ans+=arr[i]*(i+1)*(n-i);

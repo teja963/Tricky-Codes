@@ -45,9 +45,10 @@ scanf("%s %s %f %f %f %f",(BS1+i)->c,(BS1+i)->nm,&(BS1+i)->d1,&(BS1+i)->d2,&(BS1
 for(i=0;i<n1;i++){
 strcpy((C1+i)->ch,(BS1+i)->c);
 strcpy((C1+i)->name,(BS1+i)->nm);
-(C1+i)->f=(((BS1+i)->d1*17.000)+((BS1+i)->d2*17.000)+((BS1+i)->d3*21.000)+((BS1+i)->d4*21.000))/(17+17+21+21);}
+(C1+i)->f=float(((BS1+i)->d1*17.000)+((BS1+i)->d2*17.000)+((BS1+i)->d3*20.000)+((BS1+i)->d4*20.000))/(17.0000+17.000+20.000+20.000);
+}
 QUICK_SORT(C1,0,n1-1);
 printf("\n");
 for(i=n1-1,j=0;i>=0;i--)
-printf("%s %s (%.2f) ----------%d_rank\n",(C1+i)->ch,(C1+i)->name,(C1+i)->f,++j);
+printf("%s %s (%.3f) ----------%d_rank\n",(C1+i)->ch,(C1+i)->name,(C1+i)->f,++j);
 return 0;}
